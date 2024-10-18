@@ -1,8 +1,8 @@
-===================================
-#            CRUD App
-===================================
+# CRUD App
+
+
 ## Descripción:
-...............................................................
+___
 Esta es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) 
 desarrollada  con Spring Boot.  Permite gestionar  usuarios con 
 información   básica   como   nombre,   edad,   género,  correo 
@@ -10,7 +10,7 @@ electrónico y fecha de registro.
 
 
 ## Tecnologías Utilizadas:
-...............................................................
+___
 * Java 21
 * Spring Boot 3.3.4
 * Hibernate
@@ -19,48 +19,46 @@ electrónico y fecha de registro.
 * Maven
 
 ## Requisitos Previos:
-...............................................................
+___
 * JDK 21
 * Plugin Lombok
 * Maven
 * PostgreSQL (u otra base de datos)
 
-=================================
-#        Configuración
-=================================
+
+# Configuración
 
 ## Clona el repositorio:
-...............................................................
+___
 git clone <URL_DEL_REPOSITORIO>
 cd App
-...............................................................
+___
 
 ## Configura la base de datos:
-...............................................................
+___
 Asegúrate  de  tener  PostgreSQL instalado y en funcionamiento.
 Crea   una   base   de   datos y  actualiza las credenciales en  
 application.properties.
 
 ## Construye el proyecto:
-...............................................................
+___
 mvn clean install
-...............................................................
+___
 
 ## Ejecuta la aplicación:
-...............................................................
+___
 java -jar target/App-0.0.1-SNAPSHOT.jar
-...............................................................
+___
 
-===========================
-#        Endpoints
-===========================
+# Endpoints
+
 ## Crear un Usuario:
-...............................................................
+___
 * Método: POST
   URL: /api/users
   
   Body:
-..............................................................
+___
 {
   "name": "John Doe",
   "age": 30,
@@ -68,10 +66,10 @@ java -jar target/App-0.0.1-SNAPSHOT.jar
   "email": "john.doe@example.com",
   "date": "2024-10-02"
 }
-...............................................................
+___
 
 ## Obtener Todos los Usuarios:
-...............................................................
+___
 * Método: GET
   URL: /api/users
 
@@ -84,7 +82,7 @@ java -jar target/App-0.0.1-SNAPSHOT.jar
   URL: /api/users/{id}
 
   Body:
-  ...............................................................
+  ___
 {
   "name": "John Doe",
   "age": 30,
@@ -92,7 +90,7 @@ java -jar target/App-0.0.1-SNAPSHOT.jar
   "email": "john.doe@example.com",
   "date": "2024-10-02"
 }
-...............................................................
+___
 
 * Eliminar Usuario
   Método: DELETE
@@ -105,7 +103,7 @@ java -jar target/App-0.0.1-SNAPSHOT.jar
 
 ## Copyright (c) [2024] [Y0i7] [https://github.com/Y0i7]
 
-Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y de los archivos de documentación asociados (el "Software"), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y a permitir a las personas a quienes se les proporcione el Software a hacerlo, sujeto a las siguientes condiciones:
+Se concede permiso, de forma gratuita, a cualquier topic que obtenga una copia de este software y de los archivos de documentación asociados (el "Software"), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y a permitir a las personas a quienes se les proporcione el Software a hacerlo, sujeto a las siguientes condiciones:
 
 ...
 
